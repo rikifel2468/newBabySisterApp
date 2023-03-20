@@ -52,6 +52,7 @@
             android:layout_height="70dp"
             android:layout_gravity="center"
             android:text="כניסה"
+            android:onClick="funcSignIn"
             android:textSize="60px" />
 
 
