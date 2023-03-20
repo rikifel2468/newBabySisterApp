@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pinkRose"
+    tools:context=".Fragments.mainFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="330dp"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="70px"
+            android:text="שם האפלקציה" />
+
+        <Button
+            android:id="@+id/buttonSignIn"
+            android:layout_width="330dp"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="כניסה" />
+
+        <Button
+            android:id="@+id/buttonReg"
+            android:layout_width="330dp"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="הרשמה" />
+    </LinearLayout>
+</FrameLayout>
