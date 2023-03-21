@@ -17,44 +17,74 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:textSize="70px"
+            android:gravity="center"
+            android:visibility="visible"
             android:text="פרטים" />
 
         <TextView
             android:id="@+id/textView11"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginTop="7dp"
+            android:layout_gravity="center"
             android:layout_weight="1"
+            android:gravity="right|center_vertical"
+            android:background="@color/whiteYellow"
             android:text="שם פרטי" />
 
         <TextView
             android:id="@+id/textView12"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginTop="7dp"
+            android:layout_gravity="center"
             android:layout_weight="1"
+            android:gravity="right|center_vertical"
+            android:background="@color/whiteYellow"
             android:text="שם משפחה" />
 
         <TextView
             android:id="@+id/textView14"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginTop="7dp"
+            android:layout_gravity="center"
             android:layout_weight="1"
+            android:gravity="right|center_vertical"
+            android:background="@color/whiteYellow"
             android:text="מיקום" />
 
-        <EditText
-            android:id="@+id/editTextPhone2"
+        <TextView
+            android:id="@+id/TextPhone2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginTop="7dp"
+            android:layout_gravity="center"
             android:layout_weight="1"
-            android:ems="10"
-            android:inputType="phone"
+            android:gravity="right|center_vertical"
+            android:background="@color/whiteYellow"
             android:text="מספר פלאפון"/>
 
-        <EditText
-            android:id="@+id/editTextTextEmailAddress2"
+        <TextView
+            android:id="@+id/TextEmailAddress2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginTop="7dp"
+            android:layout_gravity="center"
             android:layout_weight="1"
-            android:ems="10"
+            android:gravity="right|center_vertical"
+            android:background="@color/whiteYellow"
             android:inputType="textEmailAddress"
             android:text="אימייל"/>
 
@@ -62,34 +92,29 @@
             android:id="@+id/textView13"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginTop="7dp"
+            android:layout_gravity="center"
             android:layout_weight="1"
+            android:gravity="right|center_vertical"
+            android:background="@color/whiteYellow"
             android:text="קישור לעמוד פיסבוק" />
 
-        <EditText
-            android:id="@+id/editTextDate"
+        <TextView
+            android:id="@+id/aboutme2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"
             android:layout_weight="1"
-            android:ems="10"
-            android:inputType="date"
-            android:text="ימים"/>
+            android:gravity="right|center_vertical"
+            android:background="@color/whiteYellow"
+            android:text="כמה מילים עליי"/>
 
-        <EditText
-            android:id="@+id/editTextTime"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="time"
-            android:text="זמן"/>
-
-        <Button
-            android:id="@+id/button8"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:onClick="funcRecommendation"
-            android:text="המלצות" />
     </LinearLayout>
 
 </FrameLayout>

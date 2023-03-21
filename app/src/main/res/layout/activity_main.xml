@@ -21,10 +21,12 @@
                 android:id="@+id/textView2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_weight="0.1"
+                android:fontFamily="sans-serif"
                 android:gravity="center"
-                android:textSize="70px"
-                android:layout_weight="1"
-                android:text="TextView" />
+                android:text="שם האפליקציה"
+                android:background="@color/pinkRose"
+                android:textSize="70px" />
         </LinearLayout>
 
         <androidx.fragment.app.FragmentContainerView
@@ -32,7 +34,7 @@
             android:name="androidx.navigation.fragment.NavHostFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="0.3"
+            android:layout_weight="0.1"
             app:defaultNavHost="true"
             app:navGraph="@navigation/nav" />
 

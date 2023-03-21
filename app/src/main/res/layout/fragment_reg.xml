@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/pinkRose"
     tools:context=".Fragments.regFragment">
 
@@ -48,144 +49,251 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1">
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginTop="7dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="שם פרטי"
+            app:helperText="* שדה חובה"
+            app:helperTextTextColor="@color/red"
+            app:counterEnabled="true"
+            app:counterMaxLength="20"
+            app:endIconMode="clear_text"
+            >
 
             <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="330dp"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
+                android:id="@+id/textFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:maxLength="20"
                 android:background="@color/whiteYellow"
-                android:ems="10"
-                android:gravity="right|center_vertical"
-                android:layout_marginTop="7dp"
-                android:hint="שם פרטי" />
+
+                />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1">
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginTop="7dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="שם משפחה"
+            app:helperText="* שדה חובה"
+            app:helperTextTextColor="@color/red"
+            app:counterEnabled="true"
+            app:counterMaxLength="20"
+            app:endIconMode="clear_text">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="330dp"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
+                android:id="@+id/textLastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:maxLength="20"
                 android:background="@color/whiteYellow"
-                android:ems="10"
-                android:gravity="right|center_vertical"
-                android:layout_marginTop="7dp"
-                android:hint="שם משפחה" />
+                />
         </com.google.android.material.textfield.TextInputLayout>
 
-        <EditText
-            android:id="@+id/editTextPhone"
-            android:layout_width="330dp"
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginTop="7dp"
             android:layout_gravity="center"
             android:layout_weight="1"
-            android:background="@color/whiteYellow"
-            android:ems="10"
             android:gravity="right|center_vertical"
-            android:layout_marginTop="7dp"
-            android:inputType="phone"
-            android:hint="טלפון" />
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="טלפון"
+            app:helperText="* שדה חובה"
+            app:helperTextTextColor="@color/red"
+            app:counterEnabled="true"
+            app:counterMaxLength="10"
+            app:endIconMode="clear_text">
 
-        <EditText
-            android:id="@+id/editTextTextEmailAddress"
-            android:layout_width="330dp"
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:maxLength="10"
+                android:inputType="phone"
+                android:background="@color/whiteYellow"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginTop="7dp"
             android:layout_gravity="center"
             android:layout_weight="1"
-            android:background="@color/whiteYellow"
-            android:ems="10"
             android:gravity="right|center_vertical"
-            android:layout_marginTop="7dp"
-            android:inputType="textEmailAddress"
-            android:hint="אימייל" />
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="אימייל"
+            app:helperText="* שדה חובה"
+            app:helperTextTextColor="@color/red"
+            app:endIconMode="clear_text">
 
-        <EditText
-            android:id="@+id/editTextTextPassword"
-            android:layout_width="330dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="7dp"
-            android:background="@color/whiteYellow"
-            android:ems="10"
-            android:gravity="right|center_vertical"
-            android:hint="Password"
-            android:inputType="textPassword" />
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/whiteYellow"
+                android:inputType="textEmailAddress"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="330dp"
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginTop="7dp"
             android:layout_gravity="center"
             android:layout_weight="1"
-            android:background="@color/whiteYellow"
-            android:ems="10"
             android:gravity="right|center_vertical"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="סיסמא"
+            app:helperText="* שדה חובה"
+            app:helperTextTextColor="@color/red"
+            app:counterEnabled="true"
+            app:counterMaxLength="10"
+            app:endIconMode="clear_text">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:maxLength="10"
+                android:background="@color/whiteYellow"
+                android:inputType="numberPassword"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
             android:layout_marginTop="7dp"
-            android:hint="העלאת קובץ תמונה עדכנית" />
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="העלאת קובץ תמונה עדכנית"
+            app:helperText="* שדה חובה"
+            app:helperTextTextColor="@color/red"
+            app:endIconMode="clear_text">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/whiteYellow"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
 
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="330dp"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:background="@color/whiteYellow"
-                android:ems="10"
-                android:gravity="right|center_vertical"
-                android:layout_marginTop="7dp"
-                android:hint="קישור לעמוד פייסבוק" />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <EditText
-            android:id="@+id/editTextTextPostalAddress"
-            android:layout_width="330dp"
-            android:layout_height="match_parent"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginTop="7dp"
             android:layout_gravity="center"
             android:layout_weight="1"
-            android:background="@color/whiteYellow"
-            android:ems="10"
             android:gravity="right|center_vertical"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="קישור לעמוד פייסבוק"
+            app:helperText="* שדה חובה"
+            app:helperTextTextColor="@color/red"
+
+            app:endIconMode="clear_text">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textLinkFacebook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/whiteYellow"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
             android:layout_marginTop="7dp"
-            android:inputType="textPostalAddress"
-            android:hint="מיקום" />
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="מיקום"
+            app:helperText="* שדה חובה"
+            app:helperTextTextColor="@color/red"
+            app:endIconMode="clear_text">
 
-        <CheckBox
-            android:id="@+id/checkBox"
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/whiteYellow"
+                android:inputType="textPostalAddress"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginTop="7dp"
+            android:layout_gravity="center"
             android:layout_weight="1"
-            android:textSize="50px"
-            android:layout_marginRight="5dp"
-            android:text="אישור תקנות האפלקציה" />
+            android:gravity="right|center_vertical"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="כמה מילים עלייך"
+            app:helperText="* שדה חובה"
+            app:helperTextTextColor="@color/red"
+            app:counterEnabled="true"
+            app:counterMaxLength="50"
+            app:endIconMode="clear_text">
 
-        <CheckBox
-            android:id="@+id/checkBox2"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:textSize="50px"
-            android:layout_marginRight="5dp"
-            android:text="אישור קבלת מיילים עם פרסומות" />
-
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textAboutMe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:maxLength="50"
+                android:background="@color/whiteYellow"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
         <Button
             android:id="@+id/button3"
-            android:layout_width="match_parent"
+            android:layout_width="120dp"
             android:layout_height="match_parent"
+            android:layout_gravity="center"
             android:layout_weight="1"
             android:onClick="funcReg"
             android:text="סיום"
-            android:textSize="65px" />
+            android:textSize="40px" />
     </LinearLayout>
 
 </FrameLayout>

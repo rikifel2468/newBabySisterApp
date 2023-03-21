@@ -12,14 +12,6 @@
         android:gravity="center"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="330dp"
-            android:layout_height="100dp"
-            android:gravity="center"
-            android:layout_gravity="center"
-            android:textSize="70px"
-            android:text="שם האפלקציה" />
 
         <Button
             android:id="@+id/buttonSignIn"
@@ -27,6 +19,7 @@
             android:layout_height="100dp"
             android:gravity="center"
             android:layout_gravity="center"
+            android:textSize="70px"
             android:text="כניסה" />
 
         <Button
@@ -35,6 +28,7 @@
             android:layout_height="100dp"
             android:gravity="center"
             android:layout_gravity="center"
+            android:textSize="70px"
             android:text="הרשמה" />
     </LinearLayout>
 </FrameLayout>
